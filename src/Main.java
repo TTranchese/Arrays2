@@ -11,7 +11,7 @@ public class Main {
 
 		System.out.println("Is Alice's array having the same length of Bob's array? "+(aliceToDos.length==bobToDos.length));
 		System.out.println("Is Alice's array having the same length of Tim's array? "+(aliceToDos.length==timToDos.length));
-
+		//got helped from intellij again, need to understand more about streams
 		System.out.println("Is Alice having the same tasks of Bob? "+(Arrays.equals(Arrays.stream(aliceToDos).sorted().toArray(), Arrays.stream(bobToDos).sorted().toArray())));
 		System.out.println("Is Alice having the same tasks of Tim? "+(Arrays.equals(Arrays.stream(aliceToDos).sorted().toArray(), Arrays.stream(timToDos).sorted().toArray())));
 	}
